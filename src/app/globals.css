@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 94, 53, 131; /* #5E3583 */
+  --primary-foreground: 255, 255, 255;
+  --secondary: 138, 93, 192; /* #8A5DC0 */
+  --secondary-foreground: 255, 255, 255;
+  --background: 248, 249, 250; /* #f8f9fa */
+  --foreground: 26, 26, 26; /* #1a1a1a */
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+/* Animaciones personalizadas */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
